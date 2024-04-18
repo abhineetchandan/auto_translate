@@ -180,7 +180,7 @@ class Translator {
 
       stdout.write('Translating to $language...');
 
-      // Google Translate requests are limited to 128 strings & 5k characters,
+      // Most Translate API requests are limited to 128 strings & 5k characters,
       // so iterate through in chunks if necessary
       var start = 0;
       while (start < toTranslate.length) {
